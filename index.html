@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" class="display">
+        <div class="elements">
+        <div>
+            <input type="button" value="AC" onclick="allClear()" style="font-size: 16px; background-color: #F5004F;">
+            <input type="button" value="DEL" onclick="deleteNo()" style="font-size: 16px; background-color: #7C00FE;">
+            <input type="button" value="%" onclick="get('%')">
+            <input type="button" value="/" onclick="get('/')">
+        </div>
+
+        <div>
+            <input type="button"  value="1" onclick="get('1')">
+            <input type="button"  value="2" onclick="get('2')">
+            <input type="button" value="3" onclick="get('3')">
+            <input type="button" value="+" onclick="get('+')">
+        </div>
+
+        <div>
+            <input type="button" value="4" onclick="get('4')">
+            <input type="button" value="5" onclick="get('5')">
+            <input type="button" value="6" onclick="get('6')">
+            <input type="button" value="-"onclick="get('-')">
+        </div>
+
+        <div>
+            <input type="button" value="7" onclick="get('7')">
+            <input type="button" value="8" onclick="get('8')">
+            <input type="button" value="9" onclick="get('9')">
+            <input type="button" value="*" onclick="get('*')">
+        </div>
+
+        <div>
+            <input type="button" value="." onclick="get('.')">
+            <input type="button" value="0" onclick="get('0')">
+            <input type="button" value="=" onclick="calculate()" style="width: 118px; font-size: 20px; background-color: #399918;">
+        </div>
+    </div>
+    </div>
+
+    <script>
+        let display = document.getElementById("display");
+
+        function get(input) {
+            display.value += input;
+        }
+
+        function deleteNo() {
+            display.value = display.value.toString().slice(0,-1);
+        }
+
+        function allClear() {
+            display.value = "";
+        }
+        function calculate() {
+            display.value = eval(display.value);    
+        }
+    </script>
+</body>
+</html>

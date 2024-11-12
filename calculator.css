@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: "Afacad Flux";
+}
+.calculator{
+    background-color:  black;
+    width:25%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    font-family: "Afacad Flux";
+}
+.elements{
+    text-align: center;
+}
+
+.elements input{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    margin: 10px;
+    font-weight: 800;
+    border-radius: 10px;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.calculator .display{
+    border: 0;
+    outline: 0;
+    font-weight: 700;
+    width: 85%;
+    height: 50px;
+    padding: 15px;
+    font-size: 25px;
+    color: white;
+    text-align: end;
+    background-color:  transparent;
+}
+@media screen and (max-width: 1110px){
+    body{
+        background-color: rgb(15, 15, 15);
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        font-family: "Afacad Flux";
+    }
+    .calculator{
+        background-color:  black;
+        width:400px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+        font-family: "Afacad Flux";
+        margin: 10px;
+    }
+    .elements{
+        text-align: center;
+    }
+    .elements input{
+        width: 60px;
+        height: 60px;
+        border: 0;
+        outline: 0;
+        margin: 10px;
+        font-weight: 800;
+        border-radius: 10px;
+        background-color: rgb(12, 12, 12);
+        color: white;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .calculator .display{
+        border: 0;
+        outline: 0;
+        font-weight: 700;
+        width: 88%;
+        height: 50px;
+        padding: 15px;
+        font-size: 25px;
+        color: white;
+        text-align: end;
+        background-color:  transparent;
+    }
+}
+@media screen and (max-width: 750px){
+    body{
+        background-color: rgb(15, 15, 15);
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        font-family: "Afacad Flux";
+    }
+    .calculator{
+        background-color:  black;
+        width:310px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+        font-family: "Afacad Flux";
+        margin: 10px;
+    }
+    .elements{
+        text-align: center;
+    }
+    .elements input{
+        width: 50px;
+        height: 50px;
+        border: 0;
+        outline: 0;
+        margin: 10px;
+        font-weight: 800;
+        border-radius: 10px;
+        background-color: rgb(12, 12, 12);
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .calculator .display{
+        border: 0;
+        outline: 0;
+        font-weight: 700;
+        width: 85%;
+        height: 50px;
+        padding: 15px;
+        font-size: 25px;
+        color: white;
+        text-align: end;
+        background-color:  transparent;
+    }
+}
